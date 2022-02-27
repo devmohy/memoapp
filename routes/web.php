@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('auth.register');
 });
 
+// Route::get('/{id}/notifications', function() {
+//     return view('pages.notifications');
+// });
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
